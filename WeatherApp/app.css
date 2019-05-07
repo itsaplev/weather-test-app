@@ -1,0 +1,60 @@
+.app-main-view {
+    width: 90%;
+    height: 90%;
+    margin: 10%;
+    border: 1px solid gray;
+    display: flex;
+}
+.app-main-view > .app-controls {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main-view > .app-controls > .mode-button {
+    height: 50px;
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: gray;   
+    border: 1px solid gray;
+}
+
+.app-main-view > .app-controls > .mode-button.active {
+    background-color: gray;
+    color: white;
+}
+
+.app-main-view > .app-chart {
+    height: 100%;
+    width: 80%;
+}
+
+.app-main-view > .app-chart > .app-chart-range {
+    height: 10%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-main-view > .app-chart > .app-chart-range >.year-select {
+    width: 50%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.app-main-view > .app-chart > .app-chart-area {
+    height: 80%;
+    width: 90%;
+    margin: 5%;
+}
+
+.app-main-view > .app-chart > .app-chart-area > #app-chart-canvas {
+    border: 1px solid gray;
+}

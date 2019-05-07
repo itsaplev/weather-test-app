@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Weather Application</title>
+        <script type="text/javascript" src="logger.js" defer></script>
+        <script type="text/javascript" src="db.js" defer></script>
+        <script type="text/javascript" src="service.js" defer></script>
+        <script type="text/javascript" src="ui.js" defer></script>
+        <script type="text/javascript" src="chart.js" defer></script>
+        <script type="text/javascript" src="app.js" defer></script>
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="app.css" type="text/css">
+    </head>
+
+    <body>
+        <div id="app-container" class="weather-app-widget"></div>
+    </body>
+
+    <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function() {
+             weatherApp.init('app-container');
+          });
+    </script>
+
+</html>
